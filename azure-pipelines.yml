@@ -9,13 +9,13 @@ trigger:
 variables:
 
   # Azure Resource Manager connection created during pipeline creation
-  azureSubscription: '076c9449-f0fe-463d-8570-6daed2c27065'
+  azureSubscription: 'c196f7bc-e9e5-4c25-a44f-2e2467ff6f79'
 
   # Web app name
-  webAppName: 'mySuperAwesomeApp'
+  webAppName: 'javeedjavaapp'
 
   # Environment name
-  environmentName: 'mySuperAwesomeApp'
+  environmentName: 'javeedjavaapp'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
@@ -60,7 +60,7 @@ stages:
         deploy:
           steps:
           - task: AzureWebApp@1
-            displayName: 'Azure Web App Deploy: mySuperAwesomeApp'
+            displayName: 'Azure Web App Deploy: javeedjavaapp'
             inputs:
               azureSubscription: $(azureSubscription)
               appType: webAppLinux
